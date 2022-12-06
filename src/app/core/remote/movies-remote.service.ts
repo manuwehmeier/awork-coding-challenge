@@ -28,7 +28,9 @@ export class MoviesRemoteService {
 
     return this.http
       .get<MovieSearchResult>(url, options)
-      .pipe(map((searchResult) => searchResult.Search.map(apiMovieToMovie)));
+      .pipe(
+        map((searchResult) => searchResult.Search?.map(apiMovieToMovie) ?? [])
+      );
   }
 }
 
