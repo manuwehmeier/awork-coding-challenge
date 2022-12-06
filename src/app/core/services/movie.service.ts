@@ -37,7 +37,6 @@ export class MovieService {
   }
 
   private groupMovies(movies: Movie[]): void {
-    console.log('movies before grouping:', movies);
     this.groupMoviesWorker?.postMessage(movies);
   }
 }
