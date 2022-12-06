@@ -34,11 +34,11 @@ export class MoviesRemoteService {
   }
 }
 
-function apiMovieToMovie({ Title, Year, ImdbID, Poster }: ApiMovie): Movie {
+function apiMovieToMovie({ Title, Year, imdbID, Poster }: ApiMovie): Movie {
   return {
     title: Title,
     year: Year,
-    imdbID: ImdbID,
+    imdbID,
     posterUrl: Poster,
   };
 }

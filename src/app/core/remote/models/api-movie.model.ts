@@ -1,6 +1,6 @@
 export interface ApiMovie {
   Title: string;
   Year: string;
-  ImdbID: string;
+  imdbID: string;
   Poster: string;
 }
