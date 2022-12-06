@@ -1,6 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   background-color: var(--c-dark-gray);
   border: 0px solid;
   border-radius: var(--s-xs);
   color: var(--c-white);
+}
+
+.movies-section {
+  display: flex;
+  margin: auto;
 }
