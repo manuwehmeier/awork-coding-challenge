@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
-import { MovieGroup } from '../models/movie-group.model';
-import { Movie } from '../models/movie.model';
+import { MovieGroup } from 'src/app/core/models/movie-group.model';
+import { Movie } from 'src/app/core/models/movie.model';
 
 addEventListener('message', ({ data }) => {
   const movies = data as Movie[];
