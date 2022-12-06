@@ -1,0 +1,30 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 100%;
+  border: solid 0px;
+  border-radius: var(--s-s);
+  gap: var(--s-xs);
+  background-color: var(--c-dark-gray);
+}
+
+a.movie-card {
+  &,
+  &:focus,
+  &:active &:hover,
+  &:visited {
+    color: var(--c-white);
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.movie-title {
+  font-size: var(--fs-default);
+  margin: 0;
+  padding: 0 var(--s-xs) var(--s-s) var(--s-xs);
+}

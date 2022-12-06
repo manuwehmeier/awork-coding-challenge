@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-list {
+  --movie-list-columns: 2;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(var(--movie-list-columns), 1fr);
+}
+
+@media screen and (min-width: 640px) {
+  .movie-list {
+    --movie-list-columns: 4;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .movie-list {
+    --movie-list-columns: 5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .movie-list {
+    --movie-list-columns: 6;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .movie-list {
+    --movie-list-columns: 8;
+  }
+}

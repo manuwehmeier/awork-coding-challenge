@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "styles/typo.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --fs-default: 16sp;
+  --fs-xl: 2rem;
+
+  --s-xs: 4px;
+  --s-s: 8px;
+  --s-m: 16px;
+  --s-l: 24px;
+  --s-xl: 32px;
+
+  --c-white: rgb(240, 240, 240);
+  --c-black: #000;
+  --c-dark-gray: rgb(49, 49, 49);
+
+  font-family: Open Sans;
+  font-size: var(--fs-default);
+  font-weight: 400;
+  color: var(--c-white);
+}
+
+html {
+  background-color: var(--c-black);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+}

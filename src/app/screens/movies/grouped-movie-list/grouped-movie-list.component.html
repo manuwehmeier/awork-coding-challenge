@@ -1,0 +1,11 @@
+<ng-container *ngIf="movieGroups">
+  <div *ngFor="let group of movieGroups" class="movie-group">
+    <h2>{{ group.year }}</h2>
+    <div class="movie-list">
+      <app-grouped-movie-list-item
+        *ngFor="let movie of group.movies"
+        [movie]="movie"
+      ></app-grouped-movie-list-item>
+    </div>
+  </div>
+</ng-container>

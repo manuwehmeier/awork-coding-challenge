@@ -1,0 +1,13 @@
+<section class="search-input-section">
+  <input
+    #titleSearchInput
+    class="search-input"
+    type="text"
+    (input)="setTitleSearchInput(titleSearchInput.value)"
+  />
+</section>
+<section class="movies-section">
+  <app-grouped-movie-list
+    [movieGroups]="movieGroups$ | async"
+  ></app-grouped-movie-list>
+</section>
