@@ -1,4 +1,4 @@
-import { Movie } from './movie.model';
+import { Movie } from 'src/app/core/models/movie.model';
 
 export interface MovieGroup {
   year: string;

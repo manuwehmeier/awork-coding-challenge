@@ -1,4 +1,4 @@
-import { ApiMovie } from './api-movie.model';
+import { ApiMovie } from 'src/app/core/remote/models/api-movie.model';
 
 export interface MovieSearchResult {
   Search: ApiMovie[];

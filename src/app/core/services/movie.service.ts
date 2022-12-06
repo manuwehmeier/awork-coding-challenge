@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, switchMap, tap } from 'rxjs';
-import { MovieGroup } from '../models/movie-group.model';
-import { Movie } from '../models/movie.model';
-import { MoviesRemoteService } from '../remote/movies-remote.service';
+import { MovieGroup } from 'src/app/core/models/movie-group.model';
+import { Movie } from 'src/app/core/models/movie.model';
+import { MoviesRemoteService } from 'src/app/core/remote/movies-remote.service';
 
 @Injectable({
   providedIn: 'root',

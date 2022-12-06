@@ -1,9 +1,9 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { Movie } from '../models/movie.model';
-import { ApiMovie } from './models/api-movie.model';
-import { MovieSearchResult } from './models/movie-search-result.model';
+import { Movie } from 'src/app/core/models/movie.model';
+import { ApiMovie } from 'src/app/core/remote/models/api-movie.model';
+import { MovieSearchResult } from 'src/app/core/remote/models/movie-search-result.model';
 
 @Injectable({
   providedIn: 'root',
